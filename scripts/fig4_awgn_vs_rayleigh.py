@@ -706,7 +706,9 @@ def plot_combined_results(polar_results: dict[str, object], ldpc_results: dict[s
     plt.xticks(ebn0_values)
     plt.grid(True, which="both", linestyle="--", alpha=0.6)
     plt.legend()
-    figure_path = Path(__file__).with_name("fig4_awgn_vs_rayleigh.png")
+    figure_dir = Path(__file__).resolve().parents[1] / "figures"
+    figure_dir.mkdir(parents=True, exist_ok=True)
+    figure_path = figure_dir / "fig4_awgn_vs_rayleigh.png"
     plt.savefig(figure_path, dpi=300, bbox_inches="tight")
     print(f"Saved combined FER figure to {figure_path}")
     plt.show()
