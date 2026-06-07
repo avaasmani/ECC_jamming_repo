@@ -10,7 +10,7 @@
 
 | Name        | Email                                             |
 | ----------- | ------------------------------------------------- |
-| Ava Asmani  | [](mailto:)   |
+| Ava Asmani  | [ava24@g.ucla.edu](mailto:ava24@g.ucla.edu)   |
 | Ting-Yu Yeh | [tingyu0225@g.ucla.edu](mailto:tingyu0225@g.ucla.edu)   |
 | Thai Nguyen | [](mailto:) |
 
@@ -37,39 +37,37 @@ This project investigates the performance of LDPC and Polar error-control codes 
 Run the simulation scripts to generate FER results under different jammer-to-noise ratios (JNR):
 
 ```bash
-python simulation/run_ldpc.py
-python simulation/run_polar.py
+python3 scripts/fig2_ldpcfer.py
+python3 scripts/fig3_polarawgn.py
+python3 scripts/fig4_awgn_vs_rayleigh.py
 ```
 
 The generated results will be saved in:
 
 ```text
-results/software/
+figures/fig2_ldpcfer.png
+figures/fig3_polarawgn.png
+figures/fig4_awgn_vs_rayleigh.png
 ```
 
 ---
 
 ## Reproducing SDR Experiments
 
-The SDR experiments use over-the-air transmissions with:
-
-* QPSK modulation
-* Root-raised cosine pulse shaping
-* Zadoff-Chu synchronization sequence
-* Polar-coded header
-* LDPC-coded payload
-
-Example:
-
+Run simulation with
 ```bash
-python sdr/transmitter.py
-python sdr/receiver.py
+python3 scripts/fig5_fig6_sdr_fer_ber.py
+```
+Note: you must have access to the Robert's Lab Remote RF platform. Once permission for SDR use has been granted, connectivity and installation info can be found here: https://wireless.ee.ucla.edu/remoterf/
+```bash
+pip install remoterf
 ```
 
 Results will be stored in:
 
 ```text
-results/sdr/
+figures/fig5_sdrfer.png
+figures/fig6_sdrber.png
 ```
 
 
