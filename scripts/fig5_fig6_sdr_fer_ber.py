@@ -45,8 +45,8 @@ verbose_output = False
 
 remove_rx_dc = True
 
-RX_TOKEN = "BD7NOCVPURw"
-TX_TOKEN = "rUHwL8fNRNs"
+RX_TOKEN = ""
+TX_TOKEN = ""
 
 # CFO correction
 
