@@ -4,7 +4,7 @@
 
 *“Measuring Error-Control Code Performance in LEO Satellite Uplinks under Jamming”* submitted to ECE239AS (June 2026).  
 
-**PDF:** `./paper_final.pdf`
+**PDF:** `./ECC_Jamming.pdf`
 
 **Contributors**
 
@@ -12,7 +12,7 @@
 | ----------- | ------------------------------------------------- |
 | Ava Asmani  | [ava24@g.ucla.edu](mailto:ava24@g.ucla.edu)   |
 | Ting-Yu Yeh | [tingyu0225@g.ucla.edu](mailto:tingyu0225@g.ucla.edu)   |
-| Thai Nguyen | [](mailto:) |
+| Thai Nguyen | [thainguyen16@g.ucla.edu](mailto:thainguyen16@g.ucla.edu) |
 
 ---
 
